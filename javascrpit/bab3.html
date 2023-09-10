@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>DATA MAHASISWA</title>
+</head>
+
+<body>
+    <script languange="JavaScript">
+        function tekan() {
+            var nimstr = (document.fform.nim.value);
+            var namastr = (document.fform.nama.value);
+            var jenis_kelaminstr = (document.fform.jenis_kelamin.value);
+            var agamastr = (document.fform.agama.value);
+            var statusstr = (document.fform.status.value);
+            var jurusanstr = (document.fform.jurusan.value);
+            var komentarstr = (document.fform.komentar.value);
+            document.fform.onim.value = nimstr;
+            document.fform.onama.value = namastr;
+            document.fform.ojenis_kelamin.value = jenis_kelaminstr;
+            document.fform.oagama.value = agamastr;
+            document.fform.ostatus.value = statusstr;
+            document.fform.okomentar.value = komentarstr;
+        }
+    </script>
+    <form name="fform">
+        <H1> Memasukkan Data</H1>
+        <hr>
+        <PRE>
+NIM ANDA  : <input type="number" size="11" name="nim"> <br>
+NAMA      : <input type="text" size="25" name="nama"> <br>
+KELAMIN  : <select name="jenis_kelamin">Jenis Kelamin : 
+            <option value="laki-laki">laki - laki</option>
+            <option value="perempuan">perempuan </option>
+        </select> <br>
+AGAMA  :  <select name="agama">Agama : 
+            <option value="Islam"> Islam </option>
+            <option value="Kristen">Kristen </option>
+            <option value="bhudda">bhudda </option>
+            <option value="khatolik">khatolik </option>
+            <option value="Hindu">Hindu </option>
+        </select>
+
+STATUS  :  <input type="radio" name="status" value="Pelajar">Pelajar <input type="radio" name="status" value="Mahasiswa">Mahasiswa<br> 
+JURUSAN DI SEKOLAH  :  <select name="jurusan">
+    <option value="PPLG"> PPLG </option>
+    <option value="HOTEL">HOTEL </option>
+    <option value="PEMASARAN">PEMASARAN </option>
+    <option value="AKUNTANSI">AKUNTANSI </option>
+    <option value="TATABOGA">TATABOGA </option>
+</select> <br>
+KOMENTAR : <textarea name="komentar">
+
+</textarea>
+</PRE>
+        <BR>
+        <input type="button" value="kirim" onclick="tekan()">
+        <input type="reset" value="ulang"><br><br>
+        <H3>Output</H3>
+        <h4><u>DATA MAHASISWA UNIV KOMEPUTER INDONESIA</u></h4>
+        <PRE>
+NIM :<input type="number" size="11" name="onim"> <br>
+NAMA MAHASISWA        :<input type="text" size="25" name="onama"> <br>
+JENIS KELAMIN : <input name="ojenis_kelamin"> <br>
+AGAMA : <input name="oagama"> <br>
+STATUS :<input name="ostatus"> <br>
+JURUSAN :<input name="ojurusan"> <br>
+KOMENTAR : <textarea name="okomentar">
+</form>
+</body>
+</html>

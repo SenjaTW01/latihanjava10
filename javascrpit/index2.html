@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>DATA MAHASISWA</title>
+</head>
+
+<body>
+    <script languange="JavaScript">
+        function tekan() {
+            var nimstr = (document.fform.nim.value);
+            var namastr = (document.fform.nama.value);
+            var jenis_kelaminstr = (document.fform.jenis_kelamin.value);
+            document.fform.onim.value = nimstr;
+            document.fform.onama.value = namastr;
+            document.fform.ojenis_kelamin.value = jenis_kelaminstr;
+        }
+    </script>
+    <form name="fform">
+        <H1> Memasukkan Data</H1>
+        <hr>
+        <PRE>
+NIM ANDA  : <input type="number" size="11" name="nim"> <br>
+NAMA      : <input type="text" size="25" name="nama"> <br>
+KELAMIN  : <select name="jenis_kelamin">Jenis Kelamin : 
+    <option value="laki-laki">laki - laki</option>
+    <option value="perempuan">perempuan </option>
+</select> <br>
+
+</PRE>
+        <BR>
+        <input type="button" value="kirim" onclick="tekan()">
+        <input type="reset" value="ulang">
+
+        <H3>Output</H3>
+        <PRE>
+NIM :<input type="number" size="11" name="onim"> <br>
+NAMA MAHASISWA        :<input type="text" size="25" name="onama"> <br>
+JENIS KELAMIN : <input name="ojenis_kelamin"> <br>
+
+</form>
+</body>
+</html>

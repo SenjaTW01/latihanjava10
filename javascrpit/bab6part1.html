@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selamat Pagi/Siang/Malam</title>
+</head>
+
+<body>
+    <h1>Selamat Pagi/Siang/Malam</h1>
+
+    <script>
+        // Mendapatkan waktu sekarang 
+        var waktuSekarang = new Date();
+        var jam = waktuSekarang.getHours();
+
+        // Menentukan pesan berdasarkan waktu
+        var pesan;
+
+        if (jam >= 0 && jam < 12) {
+            pesan = "Selamat Pagi!";
+        } else if (jam >= 12 && jam < 18) {
+            pesan = "Selamat Siang!";
+        } else {
+            pesan = "Selamat Malam!";
+        }
+
+        // Menampilkan pesan sebagai alert
+        alert(pesan);
+
+        // Menampilkan pesan sebagai elemen marquee
+        var marquee = document.createElement("marquee");
+        marquee.textContent = pesan;
+        document.body.appendChild(marquee);
+    </script>
+</body>
+
+</html>
